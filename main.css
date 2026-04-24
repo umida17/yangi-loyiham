@@ -111,7 +111,6 @@ header {
     box-shadow: 0 5px 15px rgba(0,210,255,0.4);
 }
 
-/* Services Cards (Hover effect) */
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
