@@ -162,7 +162,7 @@ header {
     filter: brightness(70%);
 }
 
-/* Contact Form */
+
 .contact-form {
     display: flex;
     flex-direction: column;
