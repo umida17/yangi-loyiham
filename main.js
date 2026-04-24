@@ -29,7 +29,6 @@ document.querySelectorAll('.section').forEach(section => {
 .show { opacity: 1; transform: translateY(0); }
 */
 
-// Mobile menu alert (oddiy misol)
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
     alert("Mobil menyu bosildi! Bu yerga animatsiyali menyu qo'shish mumkin.");
