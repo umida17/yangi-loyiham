@@ -1,10 +1,10 @@
-// Navigatsiya fonini o'zgartirish (Scroll bo'lganda)
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-// Scroll Reveal (Elementlar paydo bo'lishi)
+
 const observerOptions = {
     threshold: 0.2
 };
