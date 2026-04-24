@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Premium Modern Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">PRO<span>JECT</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Asosiy</a></li>
+                <li><a href="#services">Xizmatlar</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h1 class="reveal">Kelajak Texnologiyalari</h1>
+                <p class="reveal">Biz bilan loyihalaringizni yangi bosqichga olib chiqing.</p>
+                <a href="#portfolio" class="btn">Ishlarimizni ko'ring</a>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2 class="section-title">Xizmatlarimiz</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Dasturlash</h3>
+                    <p>Zamonaviy va tezkor veb-saytlar yaratish.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Dizayn</h3>
+                    <p>Foydalanuvchilar uchun qulay va chiroyli interfeys.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>SMM & Marketing</h3>
+                    <p>Brendingizni ijtimoiy tarmoqlarda yuksaltiramiz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=1" alt="Work 1"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=2" alt="Work 2"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=3" alt="Work 3"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Biz haqimizda</h2>
+                    <p>Biz 5 yildan beri raqamli dunyoda eng yaxshi yechimlarni taqdim etib kelmoqdamiz. Jamoamiz professional dasturchi va dizaynerlardan iborat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Bog'lanish</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="email" placeholder="Emailingiz" required>
+                <textarea placeholder="Xabaringiz"></textarea>
+                <button type="submit" class="btn">Yuborish</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Project Name. Barcha huquqlar himoyalangan.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
