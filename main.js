@@ -22,12 +22,8 @@ document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// CSS uchun qo'shimcha klass (JS orqali boshqarish uchun)
-// style.css faylingizga quyidagilarni ham qo'shing:
-/*
-.hidden { opacity: 0; transform: translateY(30px); transition: 1s all ease; }
-.show { opacity: 1; transform: translateY(0); }
-*/
+
+
 
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
