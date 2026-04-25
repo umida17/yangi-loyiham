@@ -45,25 +45,20 @@ function addData() {
         return;
     }
 
-    // Holatni o'zgartirish
-    status.style.display = "none";
+     status.style.display = "none";
 
-    // Yangi element yaratish
-    const li = document.createElement('li');
+     const li = document.createElement('li');
     li.innerHTML = `✅ ${input.value} <small>(${new Date().toLocaleTimeString()})</small>`;
     li.style.padding = "8px 0";
     li.style.borderBottom = "1px solid #f0f0f0";
     li.style.listStyle = "none";
     
-    // Ro'yxatga qo'shish
-    list.appendChild(li);
+     list.appendChild(li);
     
-    // Hisoblagichni yangilash
-    count++;
+     count++;
     countDisplay.innerText = count;
 
-    // Inputni tozalash
-    input.value = "";
+     input.value = "";
 }
 
 function clearAll() {
