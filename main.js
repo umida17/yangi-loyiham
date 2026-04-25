@@ -29,3 +29,46 @@ const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
     alert("Mobil menyu bosildi! Bu yerga animatsiyali menyu qo'shish mumkin.");
 });
+
+
+
+let count = 0;
+
+function addData() {
+    const input = document.getElementById('taskInput');
+    const list = document.getElementById('dataList');
+    const status = document.getElementById('status');
+    const countDisplay = document.getElementById('count');
+
+    if (input.value.trim() === "") {
+        alert("Iltimos, biror narsa yozing!");
+        return;
+    }
+
+    // Holatni o'zgartirish
+    status.style.display = "none";
+
+    // Yangi element yaratish
+    const li = document.createElement('li');
+    li.innerHTML = `✅ ${input.value} <small>(${new Date().toLocaleTimeString()})</small>`;
+    li.style.padding = "8px 0";
+    li.style.borderBottom = "1px solid #f0f0f0";
+    li.style.listStyle = "none";
+    
+    // Ro'yxatga qo'shish
+    list.appendChild(li);
+    
+    // Hisoblagichni yangilash
+    count++;
+    countDisplay.innerText = count;
+
+    // Inputni tozalash
+    input.value = "";
+}
+
+function clearAll() {
+    document.getElementById('dataList').innerHTML = "";
+    document.getElementById('status').style.display = "block";
+    document.getElementById('count').innerText = "0";
+    count = 0;
+}
