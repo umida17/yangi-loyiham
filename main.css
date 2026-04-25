@@ -348,3 +348,9 @@ footer {
     border-top: 4px solid #e74c3c;
     background-color: #fcfcfc;
 }
+
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+}
