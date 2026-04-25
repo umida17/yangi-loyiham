@@ -342,3 +342,9 @@ footer {
 .left-panel {
     border-top: 4px solid #2ecc71;
 }
+
+
+.right-panel {
+    border-top: 4px solid #e74c3c;
+    background-color: #fcfcfc;
+}
