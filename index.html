@@ -117,21 +117,25 @@
             </form>
         </section>
 
-        <section class="main-section">
-    <div class="panel left-panel">
-        <h3>Asosiy Funksiyalar</h3>
-        <p>Bu yerda loyihangizning mantiqiy elementlari joylashadi.</p>
-        <div id="logic-area">
-            </div>
-    </div>
-    <div class="panel right-panel">
-        <h3>Ma'lumotlar paneli</h3>
-        <ul class="info-list">
-            <li>Holat: Tayyor</li>
-            <li>Versiya: 2.0.1</li>
-        </ul>
+  <section class="main-section">
+    <div class="panel input-area">
+        <h3>Loyiha Boshqaruvi</h3>
+        <input type="text" id="taskInput" placeholder="Vazifa nomini yozing...">
+        <div class="button-group">
+            <button onclick="addData()" id="addBtn">Qo'shish</button>
+            <button onclick="clearAll()" id="clearBtn">Tozalash</button>
         </div>
-  </section>
+    </div>
+
+    <div class="panel monitor-area">
+        <h3>Jonli Monitoring</h3>
+        <div id="status">Hozircha vazifalar yo'q.</div>
+        <ul id="dataList"></ul>
+        <div class="counter-box">
+            Jami: <span id="count">0</span>
+        </div>
+    </div>
+</section>
     </main>
 
 
