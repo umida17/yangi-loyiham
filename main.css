@@ -305,10 +305,28 @@ footer {
 
 
 
-.burger { display: none; cursor: pointer; }
-.burger div { width: 25px; height: 3px; background: white; margin: 5px; }
+.burger { 
+    display: none;
+     cursor: pointer;
+     }
+
+.burger div { 
+    width: 25px;
+     height: 3px; 
+     background: white;
+      margin: 5px;
+     }
 
 @media screen and (max-width: 768px) {
     .nav-links { display: none; }
     .burger { display: block; }
 }
+
+
+.main-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
