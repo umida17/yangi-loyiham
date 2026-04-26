@@ -468,8 +468,7 @@ button:active {
     z-index: -1;
 }
 
-/* JS orqali qo'shiladigan reveal klassi */
-.card.revealed {
+ .card.revealed {
     opacity: 1;
     transform: translateY(0);
 }
