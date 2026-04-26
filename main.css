@@ -402,3 +402,9 @@ button:active {
     padding: 100px 0;
     background: transparent;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
