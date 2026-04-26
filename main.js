@@ -71,15 +71,13 @@ function clearAll() {
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 
-    // 1. Scroll Reveal - Kartalarni ko'rsatish
-    const revealOnScroll = () => {
+     const revealOnScroll = () => {
         cards.forEach((card, index) => {
             const cardTop = card.getBoundingClientRect().top;
             const triggerPoint = window.innerHeight - 100;
 
             if (cardTop < triggerPoint) {
-                // Har bir karta bir oz kechikish bilan chiqadi
-                setTimeout(() => {
+                 setTimeout(() => {
                     card.classList.add('revealed');
                 }, index * 150); 
             }
