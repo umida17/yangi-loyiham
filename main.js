@@ -67,3 +67,38 @@ function clearAll() {
     document.getElementById('count').innerText = "0";
     count = 0;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+
+    // 1. Scroll Reveal - Kartalarni ko'rsatish
+    const revealOnScroll = () => {
+        cards.forEach((card, index) => {
+            const cardTop = card.getBoundingClientRect().top;
+            const triggerPoint = window.innerHeight - 100;
+
+            if (cardTop < triggerPoint) {
+                // Har bir karta bir oz kechikish bilan chiqadi
+                setTimeout(() => {
+                    card.classList.add('revealed');
+                }, index * 150); 
+            }
+        });
+    };
+
+    // 2. Card Glow Effect - Sichqoncha harakati
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
+    // Hodisalarni tinglash
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Sahifa yuklanganda birinchi marta tekshirish
+});
