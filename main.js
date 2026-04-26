@@ -86,8 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // 2. Card Glow Effect - Sichqoncha harakati
-    cards.forEach(card => {
+     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
