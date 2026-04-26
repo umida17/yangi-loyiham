@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Hodisalarni tinglash
-    window.addEventListener('scroll', revealOnScroll);
+     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Sahifa yuklanganda birinchi marta tekshirish
 });
