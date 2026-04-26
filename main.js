@@ -99,5 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
      window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Sahifa yuklanganda birinchi marta tekshirish
+    revealOnScroll();  
 });
