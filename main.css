@@ -420,8 +420,6 @@ button:active {
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow: hidden;
     cursor: pointer;
-    
-    /* Dastlab ko'rinmay turishi uchun (JS uchun) */
     opacity: 0;
     transform: translateY(50px);
 }
